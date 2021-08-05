@@ -24,7 +24,7 @@
         <ul class="nav navbar-nav navbar-right">
          <% if logged_in? %>
            <li>
-             <%= link_to "#" do %>
+             <%= link_to favorites_index_path do %>
                <%= image_tag "icons/heart.png" %>
              <% end %>
            </li>
@@ -34,7 +34,7 @@
              <% end %>
            </li>
            <li>
-             <%= link_to logout_path, method: :delete do %>
+             <%= link_to logout_path, method: :delete, data: { confirm: '本当にログアウトしますか?' } do %>
                <%= image_tag "icons/logout.png" %>
              <% end %>
            </li>
@@ -53,13 +53,13 @@
          </ul>
        </div> 
      </nav>
-     
+      
      <%= yield %>
-     
      <script>
        $(function(){
          $(".alert").fadeOut(5000);
-       });
+         // $('#myInput').trigger('focus')
+        });
      </script>
    </body>
  </html>
