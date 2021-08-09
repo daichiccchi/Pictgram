@@ -22,6 +22,5 @@ Rails.application.routes.draw do
   
   get 'comments/index'
   post '/comments', to: 'comments#create'
-  patch '/comments',to: 'comments#create'
   get 'comments/new'
 end

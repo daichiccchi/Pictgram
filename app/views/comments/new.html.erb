@@ -5,7 +5,7 @@
         <h1 class="text-center">Comment</h1>
         <%= form_for @comment do |f| %>
           <div class="form_group">
-            <%= f.label :body %>
+            <%= f.label "本文" %>
             <%= f.text_area :body, class: 'form-control' %>
             <%= f.hidden_field :topic_id,:value => params[:topic_id] %>
           </div>
