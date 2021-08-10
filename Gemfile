@@ -44,6 +44,7 @@ group :development, :test do
   gem 'pry-doc'
   gem 'pry-byebug'
   gem 'pry-stack_explorer'
+  gem 'dotenv-rails'
 end
 
 group :development do
@@ -65,7 +66,6 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
-  gem 'dotenv-rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -74,3 +74,4 @@ gem 'bootstrap'
 gem 'jquery-rails'
 gem 'bcrypt'
 gem 'carrierwave'
+gem 'fog-aws'
